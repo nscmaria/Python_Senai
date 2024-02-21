@@ -14,11 +14,11 @@ print()
 
 #Calculo
 triangulo = ""
-if lado_a == lado_b or lado_a == lado_c or lado_b == lado_c:
+if lado_a == lado_b or lado_b != lado_c:
     triangulo = "ISÓSCELES"
 elif not (lado_a != lado_b) or (lado_a != lado_c) or (lado_b != lado_c):
     triangulo = "ESCALENO"
-elif lado_a == lado_b or lado_b == lado_c or lado_a == lado_c:
+elif lado_a == lado_b and lado_a == lado_c:
     triangulo = "EQUILÁTERO"
 else:
     print("Inválido.")
